@@ -1,0 +1,122 @@
+.hero{
+    width: 100%;
+    height: calc(100vh - 4.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #0f172a;
+    padding: 2rem 5%;
+}
+
+.hero>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: rgba(245, 245, 245,0.7);
+    
+}
+
+
+.hero h1{
+    text-align: center;
+    color:whitesmoke;
+    width: 90%;
+    max-width: 20rem;
+
+}
+
+.hero p{
+    text-align: center;
+    color: rgba(245, 245, 245,0.7);
+    
+}
+ 
+.hero>div:last-child{
+    border-radius: 15px;
+}
+
+.hero img{
+    width: 100%;
+    max-width: 40rem;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.hero .btn{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+.hero .btn a:first-child{
+    padding: 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 10px;
+}
+
+.hero .btn a:first-child:hover{
+    background-color: whitesmoke;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    color: #0f172a;
+}
+
+.hero .btn a:last-child{
+    padding: 1rem;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    color: white;
+    border-radius: 10px;
+}
+
+.hero .btn a:last-child:hover{
+    background-color: whitesmoke;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    color: #0f172a;
+}
+
+
+@media(min-width:768px){
+    .hero h1{
+        font-size: 3rem;
+        max-width: 25rem;
+    }
+
+    .hero h1 span{
+        color: #3b82f6;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    
+    }
+
+
+    .hero .btn{
+        gap: 2rem;
+    }
+}
+
+@media(min-width:1024px){
+    .hero{
+        flex-direction: row;
+        padding: 4rem 5%;
+        
+    }
+
+    .hero>div{
+        width: calc(100%/2);
+    }
+
+    .hero h1{
+        font-size: 4rem;
+         max-width: 30rem;
+    }
+}
